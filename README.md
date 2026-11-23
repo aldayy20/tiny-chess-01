@@ -14,6 +14,17 @@ Packed version, practice trial-0: 3.5/6, Elo 1,364. Mean across 3 practice insta
 
 0x88 board, alpha-beta search with iterative deepening to a fixed 100,000 nodes/move. Quiescence search over captures and promotions, transposition table, killer and history move ordering, null-move pruning, late-move reductions, and check extensions. Evaluation is material plus piece-square tables.
 
+## Development
+
+Built in Python and packed with the kit's compress tool from the readable source. Perft verified against python-chess, deterministic, fixed node count, worst observed move 4.3 s against a 10 s limit.
+
+## Files
+
+- `main.py` — packed engine, 3,837 bytes.
+- `LICENSE` — MIT license.
+- `README.md` — this file.
+- `.makefun/owner.json` — make.fun owner claim.
+
 ## Run it
 
 ```sh
