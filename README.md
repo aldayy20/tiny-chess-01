@@ -6,6 +6,14 @@
 
 A 4 KB Python chess engine for make.fun tiny-chess-01 — alpha-beta search, 100,000 nodes/move, packed to 3,837 bytes.
 
+## Trial results
+
+Packed version, practice trial-0: 3.5/6, Elo 1,364. Mean across 3 practice instances: 1,425 vs sunfish baseline 1,365.
+
+## How it works
+
+0x88 board, alpha-beta search with iterative deepening to a fixed 100,000 nodes/move. Quiescence search over captures and promotions, transposition table, killer and history move ordering, null-move pruning, late-move reductions, and check extensions. Evaluation is material plus piece-square tables.
+
 ## Run it
 
 ```sh
